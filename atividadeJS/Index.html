@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de média</title>
+</head>
+
+<body>
+  <script>
+    let notas = [];
+    for(let i= 0; i<5; i++){
+      let nota = Number(prompt("Digite uma nota: "));
+      notas.push(nota);
+    }
+    let soma = 0;
+    for(let i=0; i<5; i++){
+      soma = soma+notas[i];
+    }
+    let media = soma/5;
+    alert(
+      "A média é: " + media
+    )
+  </script>
+</body>
+
+</html>
